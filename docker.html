@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello</h1>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+docker --v
+
+docker images  (how many images are available)
+
+docker ps  (which container is ruuning)
+
+(//now we are developing the java container and addition of two numbers)
+
+(//go to google for docker hub webiste (image))
+
+docker pull openjdk
+
+docker images
+
+
+docker run --name JAVA -it -d openjdk   (//for running the images)
+
+docker exec -it JAVA jshell  (for executing the container)
+
+
+System.out.println("Hello World!");
+
+int a = 13;
+
+int b=20;
+
+System.out.println("Sum: "+ (a+b));
+
+/exit
+
+docker ps
+
+docker stop 47acf8a59225//for stopping container
+
+docker container rm 47acf8a59225//for removing the container
+
+docker ps
+
+docker images
+
+docker image prune

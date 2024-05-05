@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Engineering Colleges</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.css">
+    <style>
+        /* Additional CSS for table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .college-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
+</head>
+  
+<body>
+    <center>
+        <div data-role="page">
+            <h1 style="color:#005dde;">
+                Engineering Colleges
+            </h1>
+            <div data-role="header">
+                <div role="main" class="ui-content">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>College</th>
+                                <th>Location</th>
+                                <th>Website</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>I²IT</td>
+                                <td>Pune, India</td>
+                                <td><a href="https://www.isquareit.edu.in/" class="college-link" data-rel="external">https://www.isquareit.edu.in/</a></td>
+                            </tr>
+                            <!-- Add more colleges here if needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <input type="button" id="Button" value="Register">
+            <div id="log"></div>
+        </div>
+    </center>
+    <script>
+        $(document).ready(function () {
+    $("#Button").on('click', function () {
+        $("#log").html("Welcome to Engineering College Site!!");
+    });
+});
+
+    </script>
+</body>
+  
+</html>
